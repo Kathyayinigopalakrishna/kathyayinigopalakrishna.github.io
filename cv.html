@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Kathy Gopalakrishna | CV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+margin:0;
+background:#F6F8FB;
+color:#2D3748;
+line-height:1.7;
+}
+
+/* NAVBAR */
+header{
+background:white;
+padding:18px 60px;
+border-bottom:1px solid #E2E8F0;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav.desktop-nav a{
+color:#1E3A5F;
+margin-right:24px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav.desktop-nav a:hover{
+opacity:0.7;
+}
+
+/* MOBILE MENU */
+.mobile-menu{
+display:none;
+position:relative;
+margin-left:auto;
+}
+
+.menu-toggle{
+background:#ffffff;
+border:1px solid #CBD5E0;
+border-radius:8px;
+padding:8px 12px;
+font-size:18px;
+cursor:pointer;
+color:#1E3A5F;
+}
+
+.menu-dropdown{
+display:none;
+position:absolute;
+right:0;
+top:42px;
+background:white;
+border:1px solid #E2E8F0;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+min-width:160px;
+overflow:hidden;
+}
+
+.menu-dropdown a{
+display:block;
+padding:12px 16px;
+text-decoration:none;
+color:#1E3A5F;
+font-weight:500;
+border-bottom:1px solid #EDF2F7;
+}
+
+.menu-dropdown a:last-child{
+border-bottom:none;
+}
+
+.menu-dropdown a:hover{
+background:#F7FAFC;
+}
+
+.mobile-menu:hover .menu-dropdown{
+display:block;
+}
+
+/* DOWNLOAD CARD */
+.cv-header{
+max-width:1100px;
+margin:auto;
+padding:50px 30px 20px;
+}
+
+.cv-card{
+background:white;
+padding:35px;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+text-align:center;
+}
+
+.cv-download{
+display:inline-block;
+padding:14px 28px;
+background:#2B6CB0;
+color:white;
+border-radius:6px;
+text-decoration:none;
+font-size:16px;
+font-weight:500;
+}
+
+.cv-download:hover{
+background:#1E4E8C;
+}
+
+/* SECTIONS */
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px 30px 0;
+}
+
+.section{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+margin-bottom:20px;
+}
+
+.section-title{
+font-size:28px;
+margin:0 0 20px;
+color:#1E3A5F;
+}
+
+/* ENTRY */
+.entry{
+padding:6px 0 14px;
+}
+
+.entry + .entry{
+border-top:1px solid #E2E8F0;
+padding-top:16px;
+}
+
+.entry-header{
+display:flex;
+justify-content:space-between;
+gap:16px;
+flex-wrap:wrap;
+align-items:flex-start;
+}
+
+.entry-title{
+font-weight:600;
+font-size:18px;
+}
+
+.entry-org{
+color:#2B6CB0;
+font-weight:500;
+margin-top:3px;
+}
+
+.entry-date{
+color:#718096;
+font-size:15px;
+white-space:nowrap;
+}
+
+/* TAG GRID */
+.tag-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:16px;
+}
+
+.tag-pill{
+padding:16px;
+background:white;
+border:1px solid #E2E8F0;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+color:#1E3A5F;
+font-weight:500;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+header{
+padding:14px 16px;
+display:flex;
+justify-content:flex-end;
+}
+
+nav.desktop-nav{
+display:none;
+}
+
+.mobile-menu{
+display:block;
+}
+
+.cv-header{
+padding:30px 20px 10px;
+}
+
+.container{
+padding:10px 20px 0;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.entry-header{
+flex-direction:column;
+gap:6px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="desktop-nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="research.html">Research</a>
+<a href="media.html">Media</a>
+<a href="cv.html">CV</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="mobile-menu">
+<button class="menu-toggle">☰</button>
+<div class="menu-dropdown">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="research.html">Research</a>
+<a href="media.html">Media</a>
+<a href="cv.html">CV</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+</header>
+
+<div class="cv-header">
+<div class="cv-card">
+<a href="cv.pdf" class="cv-download" target="_blank" download>
+Download Kathy's CV
+</a>
+</div>
+</div>
+
+<div class="container">
+
+<section class="section">
+<h2 class="section-title">Education</h2>
+
+<div class="entry">
+<div class="entry-header">
+<div>
+<div class="entry-title">PhD, Human Genetics (Microbiology & Immunology)</div>
+<div class="entry-org">University of Pittsburgh</div>
+</div>
+<div class="entry-date">2015 – 2019</div>
+</div>
+</div>
+
+<div class="entry">
+<div class="entry-header">
+<div>
+<div class="entry-title">MBBS</div>
+<div class="entry-org">Rajiv Gandhi University of Health Sciences</div>
+</div>
+<div class="entry-date">2006 – 2012</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Academic and Research Experience</h2>
+
+<div class="entry">
+<div class="entry-header">
+<div>
+<div class="entry-title">Project Scientist (Dr. Bryan Brown)</div>
+<div class="entry-org">University of California, Riverside</div>
+</div>
+<div class="entry-date">2025 – Present</div>
+</div>
+</div>
+
+<div class="entry">
+<div class="entry-header">
+<div>
+<div class="entry-title">Postdoctoral Researcher (Dr. Rustem Ismagilov)</div>
+<div class="entry-org">California Institute of Technology</div>
+</div>
+<div class="entry-date">2023 – 2025</div>
+</div>
+</div>
+
+<div class="entry">
+<div class="entry-header">
+<div>
+<div class="entry-title">Postdoctoral Fellow (Dr. Thomas Hooven)</div>
+<div class="entry-org">UPMC Children's Hospital of Pittsburgh</div>
+</div>
+<div class="entry-date">2020 – 2023</div>
+</div>
+</div>
+
+<div class="entry">
+<div class="entry-header">
+<div>
+<div class="entry-title">Graduate Student Researcher (Dr. Timothy Hand)</div>
+<div class="entry-org">UPMC Children's Hospital of Pittsburgh</div>
+</div>
+<div class="entry-date">2016 – 2019</div>
+</div>
+</div>
+
+<div class="entry">
+<div class="entry-header">
+<div>
+<div class="entry-title">Medical Officer – Neonatal ICU</div>
+<div class="entry-org">Madikeri District Hospital</div>
+</div>
+<div class="entry-date">2013 – 2015</div>
+</div>
+</div>
+
+</section>
+
+<section class="section">
+<h2 class="section-title">Funding and Grants</h2>
+
+<div class="entry">
+<div class="entry-title">Group B Streptococcus determinants of neonatal intestinal colonization</div>
+<div class="entry-org">UPMC Children’s Hospital of Pittsburgh</div>
+<p>$40,000</p>
+</div>
+
+<div class="entry">
+<div class="entry-title">Role of maternal IgA in prevention of Necrotizing Enterocolitis</div>
+<div class="entry-org">UPMC Children’s Hospital of Pittsburgh</div>
+<p>$50,000</p>
+</div>
+
+</section>
+
+<section class="section">
+<h2 class="section-title">Teaching & Mentorship</h2>
+
+<div class="entry">Lecture: Mucosal Immunology, Caltech (2024)</div>
+<div class="entry">Lecture: Infectious Diseases and Vaccines, UCR (2025)</div>
+
+</section>
+
+<section class="section">
+<h2 class="section-title">Research Expertise</h2>
+
+<div class="tag-grid">
+<div class="tag-pill">Comparative & Host–Microbe Biology</div>
+<div class="tag-pill">Immunology & Host–Microbe Interaction</div>
+<div class="tag-pill">Molecular Biology & Genome Engineering</div>
+<div class="tag-pill">Eukaryotic Cell Culture</div>
+<div class="tag-pill">Animal Models</div>
+<div class="tag-pill">Imaging & Cell Analysis</div>
+<div class="tag-pill">Data Analysis</div>
+<div class="tag-pill">Laboratory Leadership</div>
+</div>
+
+</section>
+
+<section class="section">
+<h2 class="section-title">Key Awards</h2>
+
+<div class="entry">U.S. EB-1A Permanent Residency (Extraordinary Ability) — 2022</div>
+<div class="entry">PAS Travel Award — 2023</div>
+<div class="entry">Keystone eSymposia Scholarship — 2021</div>
+<div class="entry">ICMI Travel Award — 2019</div>
+<div class="entry">Best Poster Award — 2019</div>
+<div class="entry">Academic Excellence Award — 2010 & 2011</div>
+
+</section>
+
+</div>
+
+<footer style="text-align:center;padding:30px 10px;color:#718096;font-size:14px;border-top:1px solid #E2E8F0;margin-top:40px;">
+© Kathyayini Gopalakrishna
+</footer>
+
+</body>
+</html>
