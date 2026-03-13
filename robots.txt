@@ -1,0 +1,3 @@
+User-agent: * Allow: /
+
+Sitemap: https://kathyayinigopalakrishna.github.io/sitemap.xml
