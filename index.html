@@ -16,12 +16,16 @@
 <meta name="google-site-verification" content="ZfXh0Dws4n_hlcDz7YYTLBzpxnqtjt4moD3AJVhhXz8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Open Graph metadata for link previews -->
 <meta property="og:title" content="Kathyayini Gopalakrishna | Official Website">
 <meta property="og:description" content="Research on breast milk immunity and necrotizing enterocolitis">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kathyayinigopalakrishna.github.io/">
 <meta property="og:image" content="https://kathyayinigopalakrishna.github.io/profile.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
+<!-- Twitter preview -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kathyayini Gopalakrishna | Official Website">
 <meta name="twitter:description" content="Research on breast milk immunity and necrotizing enterocolitis">
@@ -29,20 +33,20 @@
 
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "Person",
-"name": "Kathyayini Gopalakrishna",
-"honorificSuffix": "MBBS, PhD",
-"url": "https://kathyayinigopalakrishna.github.io/",
-"image": "https://kathyayinigopalakrishna.github.io/profile.jpg",
-"jobTitle": "Project Scientist",
-"worksFor": {
-"@type": "Organization",
-"name": "University of California, Riverside"
-},
-"sameAs": [
-"https://scholar.google.com/citations?user=NXlf3MsAAAAJ"
-]
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kathyayini Gopalakrishna",
+  "honorificSuffix": "MBBS, PhD",
+  "url": "https://kathyayinigopalakrishna.github.io/",
+  "image": "https://kathyayinigopalakrishna.github.io/profile.jpg",
+  "jobTitle": "Project Scientist",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "University of California, Riverside"
+  },
+  "sameAs": [
+    "https://scholar.google.com/citations?user=NXlf3MsAAAAJ"
+  ]
 }
 </script>
 
@@ -56,10 +60,14 @@ color:#2D3748;
 line-height:1.7;
 }
 
+/* HERO BANNER */
+
 .hero-banner{
 background:#FFFFFF;
 height:300px;
 }
+
+/* PROFILE SECTION */
 
 .profile-section{
 max-width:1200px;
@@ -76,6 +84,8 @@ align-items:center;
 margin-top:-170px;
 }
 
+/* PROFILE IMAGE */
+
 .profile-photo{
 width:440px;
 height:520px;
@@ -85,6 +95,8 @@ border:6px solid white;
 object-fit:cover;
 display:block;
 }
+
+/* NAVBAR */
 
 header{
 background:white;
@@ -102,6 +114,64 @@ text-decoration:none;
 font-weight:500;
 }
 
+nav.desktop-nav a:hover{
+opacity:0.7;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu{
+display:none;
+position:relative;
+margin-left:auto;
+}
+
+.menu-toggle{
+background:#ffffff;
+border:1px solid #CBD5E0;
+border-radius:8px;
+padding:8px 12px;
+font-size:18px;
+cursor:pointer;
+color:#1E3A5F;
+}
+
+.menu-dropdown{
+display:none;
+position:absolute;
+right:0;
+top:42px;
+background:white;
+border:1px solid #E2E8F0;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+min-width:160px;
+overflow:hidden;
+}
+
+.menu-dropdown a{
+display:block;
+padding:12px 16px;
+text-decoration:none;
+color:#1E3A5F;
+font-weight:500;
+border-bottom:1px solid #EDF2F7;
+}
+
+.menu-dropdown a:last-child{
+border-bottom:none;
+}
+
+.menu-dropdown a:hover{
+background:#F7FAFC;
+}
+
+.mobile-menu:hover .menu-dropdown{
+display:block;
+}
+
+/* BUTTONS */
+
 .button{
 display:inline-block;
 margin-right:10px;
@@ -118,6 +188,8 @@ font-size:14px;
 background:#1E4E8C;
 }
 
+/* SECTIONS */
+
 .container{
 max-width:1100px;
 margin:auto;
@@ -130,6 +202,8 @@ font-size:28px;
 margin-bottom:25px;
 color:#1E3A5F;
 }
+
+/* RESEARCH GRID */
 
 .research-grid{
 display:grid;
@@ -144,24 +218,38 @@ border-radius:10px;
 box-shadow:0 6px 18px rgba(0,0,0,0.05);
 }
 
+/* TRAINING */
+
 .training-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:30px;
+align-items:center;
 text-align:center;
 }
 
 .training-card{
 background:white;
-padding:25px;
+padding:25px 20px;
 border-radius:10px;
 box-shadow:0 6px 18px rgba(0,0,0,0.05);
 }
 
 .training-card img{
 max-width:140px;
+height:auto;
 margin-bottom:12px;
+opacity:0.95;
 }
+
+.training-card p{
+margin:0;
+font-size:15px;
+font-weight:500;
+color:#1E3A5F;
+}
+
+/* PUBLICATIONS */
 
 .pub-card{
 background:white;
@@ -174,21 +262,43 @@ gap:15px;
 align-items:center;
 text-decoration:none;
 color:inherit;
+transition:transform 0.2s ease, box-shadow 0.2s ease;
+cursor:pointer;
+}
+
+.pub-card:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.pub-card:focus{
+outline:2px solid #2B6CB0;
+outline-offset:3px;
 }
 
 .pub-logo{
 width:50px;
+flex-shrink:0;
 }
 
 .pub-title{
 font-weight:600;
 color:#1E3A5F;
+margin-bottom:4px;
 }
 
 .pub-journal{
 color:#2B6CB0;
 font-size:14px;
 }
+
+.pub-link-hint{
+font-size:13px;
+color:#718096;
+margin-top:4px;
+}
+
+/* MEDIA */
 
 .media-grid{
 display:grid;
@@ -199,6 +309,84 @@ text-align:center;
 
 .media-grid img{
 width:110px;
+opacity:0.9;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+header{
+padding:14px 16px;
+display:flex;
+justify-content:flex-end;
+align-items:center;
+}
+
+nav.desktop-nav{
+display:none;
+}
+
+.mobile-menu{
+display:block;
+}
+
+.hero-banner{
+height:220px;
+background:#FFFFFF;
+}
+
+.profile-section{
+max-width:100%;
+padding:0;
+}
+
+.profile-card{
+grid-template-columns:1fr;
+text-align:center;
+gap:30px;
+margin-top:-120px;
+}
+
+.profile-photo{
+width:100vw;
+max-width:100vw;
+height:auto;
+margin:0;
+border-radius:0;
+border:none;
+box-shadow:none;
+}
+
+.container{
+padding:40px 20px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.research-grid{
+grid-template-columns:1fr;
+}
+
+.training-grid{
+grid-template-columns:1fr;
+}
+
+.media-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.media-grid img{
+width:80px;
+margin:auto;
+}
+
+.pub-card{
+align-items:flex-start;
+}
+
 }
 
 </style>
@@ -217,6 +405,18 @@ width:110px;
 <a href="cv.html">CV</a>
 <a href="contact.html">Contact</a>
 </nav>
+
+<div class="mobile-menu">
+<button class="menu-toggle" aria-label="Open menu">☰</button>
+<div class="menu-dropdown">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="research.html">Research</a>
+<a href="media.html">Media</a>
+<a href="cv.html">CV</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
 
 </header>
 
@@ -246,7 +446,7 @@ Kathy is a physician scientist who studies how maternal immunity, microbial gene
 </p>
 
 <a class="button" href="cv.pdf">Download CV</a>
-<a class="button" href="https://scholar.google.com/citations?user=NXlf3MsAAAAJ" target="_blank">Publications</a>
+<a class="button" href="https://scholar.google.com/citations?user=NXlf3MsAAAAJ" target="_blank" rel="noopener noreferrer">Publications</a>
 
 </div>
 
@@ -276,13 +476,15 @@ Immune signaling pathways govern microbial tolerance and defense.
 </div>
 
 <div class="research-card">
-<h3>Breast Milk & Necrotizing Enterocolitis</h3>
+<h3>Breast Milk &amp; Necrotizing Enterocolitis</h3>
 Understanding how maternal antibodies and immune factors in breast milk protect premature infants against necrotizing enterocolitis.
 </div>
 
 </div>
 
 </div>
+
+<!-- TRAINING -->
 
 <div class="container">
 
@@ -291,17 +493,17 @@ Understanding how maternal antibodies and immune factors in breast milk protect 
 <div class="training-grid">
 
 <div class="training-card">
-<img src="pitt1.png">
+<img src="pitt1.png" alt="University of Pittsburgh logo">
 <p>University of Pittsburgh</p>
 </div>
 
 <div class="training-card">
-<img src="caltech.png">
+<img src="caltech.png" alt="California Institute of Technology logo">
 <p>California Institute of Technology</p>
 </div>
 
 <div class="training-card">
-<img src="ucr.png">
+<img src="ucr.png" alt="University of California, Riverside logo">
 <p>University of California, Riverside</p>
 </div>
 
@@ -309,45 +511,52 @@ Understanding how maternal antibodies and immune factors in breast milk protect 
 
 </div>
 
+<!-- PUBLICATIONS -->
+
 <div class="container">
 
 <h2 class="section-title">Selected Publications</h2>
 
-<a class="pub-card" href="https://www.nature.com/articles/s41591-019-0480-9" target="_blank">
-<img class="pub-logo" src="nature.png">
+<a class="pub-card" href="https://www.nature.com/articles/s41591-019-0480-9" target="_blank" rel="noopener noreferrer">
+<img class="pub-logo" src="nature.png" alt="Nature Medicine logo">
 <div>
 <div class="pub-title">Maternal IgA protects against necrotizing enterocolitis</div>
 <div class="pub-journal">Nature Medicine</div>
+<div class="pub-link-hint">View article →</div>
 </div>
 </a>
 
-<a class="pub-card" href="https://rupress.org/jem/article/220/8/e20220839/214243" target="_blank">
-<img class="pub-logo" src="jem.png">
+<a class="pub-card" href="https://rupress.org/jem/article/220/8/e20220839/214243" target="_blank" rel="noopener noreferrer">
+<img class="pub-logo" src="jem.png" alt="Journal of Experimental Medicine logo">
 <div>
 <div class="pub-title">Stability and heterogeneity in antimicrobiota reactivity of human milk IgA</div>
 <div class="pub-journal">Journal of Experimental Medicine</div>
+<div class="pub-link-hint">View article →</div>
 </div>
 </a>
 
-<a class="pub-card" href="https://www.nature.com/articles/s42003-023-04994-w" target="_blank">
-<img class="pub-logo" src="communications_biology.png">
+<a class="pub-card" href="https://www.nature.com/articles/s42003-023-04994-w" target="_blank" rel="noopener noreferrer">
+<img class="pub-logo" src="communications_biology.png" alt="Communications Biology logo">
 <div>
 <div class="pub-title">Group B Streptococcus Cas9 variants reveal programmable gene repression</div>
 <div class="pub-journal">Communications Biology</div>
+<div class="pub-link-hint">View article →</div>
 </div>
 </a>
 
 </div>
+
+<!-- MEDIA -->
 
 <div class="container">
 
 <h2 class="section-title">Featured In</h2>
 
 <div class="media-grid">
-<img src="usnews.png">
-<img src="cbs.png">
-<img src="healthline.png">
-<img src="dailymail.png">
+<img src="usnews.png" alt="U.S. News logo">
+<img src="cbs.png" alt="CBS logo">
+<img src="healthline.png" alt="Healthline logo">
+<img src="dailymail.png" alt="Daily Mail logo">
 </div>
 
 </div>
