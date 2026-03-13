@@ -207,7 +207,8 @@
       border:1px solid transparent;
     }
 
-    .media-card:hover{
+    .media-card:hover,
+    .media-card-static:hover{
       transform:translateY(-6px);
       box-shadow:0 14px 30px rgba(0,0,0,0.10);
       border-color:#E2E8F0;
@@ -222,9 +223,10 @@
     .media-image-wrap{
       display:block;
       width:100%;
-      aspect-ratio:16/10;
+      height:220px;
       overflow:hidden;
       background:#EDF2F7;
+      flex-shrink:0;
     }
 
     .media-image{
@@ -247,6 +249,7 @@
       color:#1E3A5F;
       margin-bottom:10px;
       line-height:1.5;
+      min-height:78px;
     }
 
     .media-source{
@@ -254,6 +257,7 @@
       color:#2B6CB0;
       font-weight:600;
       margin-bottom:6px;
+      margin-top:auto;
     }
 
     .media-link{
@@ -330,7 +334,11 @@
       }
 
       .media-image-wrap{
-        aspect-ratio:16/10;
+        height:220px;
+      }
+
+      .media-title{
+        min-height:auto;
       }
 
       .media-content,
