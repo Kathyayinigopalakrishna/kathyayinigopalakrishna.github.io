@@ -132,7 +132,7 @@
       box-shadow:0 10px 24px rgba(0,0,0,0.08);
     }
 
-   .commentary-icon{
+    .commentary-icon{
       width:140px;
       height:140px;
       object-fit:contain;
@@ -140,7 +140,7 @@
       background:#F8FAFC;
       padding:12px;
       flex-shrink:0;
-}
+    }
 
     .commentary-title{
       font-size:20px;
@@ -162,7 +162,7 @@
     }
 
     .country-block{
-      margin-top:42px;
+      margin-top:60px;
     }
 
     .country-title{
@@ -173,7 +173,15 @@
       border-bottom:1px solid #E2E8F0;
     }
 
- .media-card{
+    .media-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:32px;
+      margin-top:26px;
+      align-items:stretch;
+    }
+
+    .media-card{
       display:flex;
       flex-direction:column;
       height:100%;
@@ -185,9 +193,8 @@
       color:inherit;
       transition:transform 0.2s ease, box-shadow 0.2s ease;
       border:1px solid transparent;
-}
+    }
 
-    .media-card,
     .media-card-static{
       display:block;
       background:white;
@@ -201,8 +208,8 @@
     }
 
     .media-card:hover{
-      transform:translateY(-4px);
-      box-shadow:0 12px 28px rgba(0,0,0,0.08);
+      transform:translateY(-6px);
+      box-shadow:0 14px 30px rgba(0,0,0,0.10);
       border-color:#E2E8F0;
     }
 
@@ -215,7 +222,7 @@
     .media-image-wrap{
       display:block;
       width:100%;
-      aspect-ratio:4/3;
+      aspect-ratio:16/10;
       overflow:hidden;
       background:#EDF2F7;
     }
@@ -228,20 +235,19 @@
     }
 
     .media-content{
-      padding:18px 18px 20px;
+      padding:20px 20px 22px;
       display:flex;
       flex-direction:column;
       flex-grow:1;
-}
+    }
 
-   .media-title{
+    .media-title{
       font-size:17px;
       font-weight:600;
       color:#1E3A5F;
-      margin-bottom:8px;
-      line-height:1.45;
-      min-height:50px;
-}
+      margin-bottom:10px;
+      line-height:1.5;
+    }
 
     .media-source{
       font-size:14px;
@@ -259,7 +265,7 @@
     .media-list-no-image{
       display:grid;
       grid-template-columns:1fr;
-      gap:14px;
+      gap:18px;
       margin-top:22px;
     }
 
@@ -308,20 +314,20 @@
       .commentary-icon{
         width:120px;
         height:120px;
-}
+      }
 
       .media-grid{
         grid-template-columns:1fr;
-        gap:20px;
+        gap:24px;
       }
 
-    .media-card,
-.media-card-static{
+      .media-card,
+      .media-card-static{
         border-radius:12px;
         max-width:520px;
         margin-left:auto;
         margin-right:auto;
-}
+      }
 
       .media-image-wrap{
         aspect-ratio:16/10;
@@ -377,7 +383,7 @@
     </a>
 
     <a class="commentary-card" href="https://www.nature.com/articles/s41575-019-0180-4" target="_blank" rel="noopener">
-      <img class="commentary-icon" src="nrgastro.png" alt="Nature Reviews Gastroenterology & Hepatology">
+      <img class="commentary-icon" src="nrgastro.png" alt="Nature Reviews Gastroenterology &amp; Hepatology">
       <div>
         <div class="commentary-author">Dickson I.</div>
         <div class="commentary-title">Maternal IgA is Necessary for Preventing Necrotizing Enterocolitis</div>
@@ -386,7 +392,7 @@
     </a>
 
     <a class="commentary-card" href="https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(19)30357-9" target="_blank" rel="noopener">
-      <img class="commentary-icon" src="cell_host_microbe.png" alt="Cell Host & Microbe">
+      <img class="commentary-icon" src="cell_host_microbe.png" alt="Cell Host &amp; Microbe">
       <div>
         <div class="commentary-author">Dunne-Castagna VP, Taft DH.</div>
         <div class="commentary-title">Mother’s Touch: Milk IgA and Protection from Necrotizing Enterocolitis</div>
@@ -401,8 +407,8 @@
 
   <div class="country-block">
     <h3 class="country-title">United States</h3>
-    
-   <div class="media-grid">
+
+    <div class="media-grid">
       <a class="media-card" href="https://www.healthline.com/health-news/breastfeeding-preterm-infants-can-protect-them-from-dangerous-gut-bacteria" target="_blank" rel="noopener">
         <span class="media-image-wrap"><img class="media-image" src="healthlineimage.png" alt="Healthline article image"></span>
         <div class="media-content">
@@ -456,9 +462,8 @@
           <div class="media-link">View article</div>
         </div>
       </a>
-    </div>
 
-          <a class="media-card" href="https://medicalxpress.com/news/2019-06-breastmilk-antibody-preterm-infants-deadly.html" target="_blank" rel="noopener">
+      <a class="media-card" href="https://medicalxpress.com/news/2019-06-breastmilk-antibody-preterm-infants-deadly.html" target="_blank" rel="noopener">
         <span class="media-image-wrap"><img class="media-image" src="medicalxpressimage.png" alt="MedicalXpress article image"></span>
         <div class="media-content">
           <div class="media-title">Breastmilk Antibody Protects Preterm Infants from Deadly Intestinal Disease</div>
@@ -475,6 +480,8 @@
           <div class="media-link">View article</div>
         </div>
       </a>
+    </div>
+  </div>
 
   <div class="country-block">
     <h3 class="country-title">United Kingdom</h3>
@@ -631,6 +638,8 @@
           <div class="media-link">View article</div>
         </div>
       </a>
+    </div>
+  </div>
 
   <div class="country-block">
     <h3 class="country-title">China</h3>
