@@ -17,7 +17,7 @@ line-height:1.7;
 -webkit-font-smoothing:antialiased;
 }
 
-/* NAVBAR */
+/* NAVBAR (IDENTICAL TO CONTACT PAGE) */
 
 header{
 background:white;
@@ -26,8 +26,6 @@ border-bottom:1px solid #E2E8F0;
 position:sticky;
 top:0;
 z-index:1000;
-display:flex;
-align-items:center;
 }
 
 nav.desktop-nav a{
@@ -41,7 +39,7 @@ nav.desktop-nav a:hover{
 opacity:0.7;
 }
 
-/* MOBILE MENU */
+/* MOBILE MENU (IDENTICAL TO CONTACT PAGE) */
 
 .mobile-menu{
 display:none;
@@ -273,10 +271,8 @@ grid-template-columns:1fr;
 </nav>
 
 <div class="mobile-menu">
-
-<button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-<div class="menu-dropdown" id="mobileMenu">
+<button class="menu-toggle">☰</button>
+<div class="menu-dropdown">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="research.html">Research</a>
@@ -284,7 +280,6 @@ grid-template-columns:1fr;
 <a href="cv.html">CV</a>
 <a href="contact.html">Contact</a>
 </div>
-
 </div>
 
 </header>
@@ -435,13 +430,6 @@ grid-template-columns:1fr;
 <footer style="text-align:center;padding:30px 10px;color:#718096;font-size:14px;border-top:1px solid #E2E8F0;margin-top:40px;">
 © Kathyayini Gopalakrishna
 </footer>
-
-<script>
-function toggleMenu(){
-var menu=document.getElementById("mobileMenu");
-menu.style.display = menu.style.display === "block" ? "none" : "block";
-}
-</script>
 
 </body>
 </html>
